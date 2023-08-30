@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputArea">
+            <label for="html-box">HTML</label>
+            <textarea id="html-box" onkeyup="run()"></textarea>
+
+            <label for="css-box">CSS</label>
+            <textarea id="css-box" onkeyup="run()"></textarea>
+
+            <label for="js-box">JavaScript</label>
+            <textarea id="js-box" onkeyup="run()"></textarea>
+        </div>
+        <div class="outputArea">
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
